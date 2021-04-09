@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        //com array filter é possivel filtrar objetos específicos
+        let func = [{nome: ' fernanda', cargo: 'Gerente RH', salario:'3500', status: 'ativo'},{nome: ' gabriel', cargo: 'Programado JAVA', salario:'7500', status: 'inativo'},{nome: ' bruna', cargo: 'Diretora de Marketing', salario:'2000', status: 'ativo'},{nome: ' julio', cargo: 'Gerente de Projetos', salario:'4500', status: 'ativo'},{nome: ' otavio', cargo: 'Secretario', salario:'1700', status: 'ativo'}]
+
+        func.filter(function(f) {return f.salario < 4500}).filter(function(f) {return f.status == 'ativo'})
+
+
+
+
+    </script>
+    
+</body>
+</html>
