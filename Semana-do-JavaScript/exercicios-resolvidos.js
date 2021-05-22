@@ -7,9 +7,11 @@
 
 const randomNumbers = [10, 30, 15, 25, 50, 40, 5]
 
-const onlyImpar = randomNumbers.filter(number => number % 2 == 1)
+const onlyImpar = randomNumbers.filter(item => item % 2 == 1)
 
 console.log(onlyImpar)
+
+
 
 /*
   02
@@ -19,9 +21,19 @@ console.log(onlyImpar)
 
 const crazyNumbers = [937, 5, 395, 402, 501, 333, 502, 781, 3, 691]
 
-const lessThan501 = crazyNumbers.filter(crazyNumber => crazyNumber < 501 )
+const crazyNumbersLessThan501 = crazyNumbers.reduce((accumulator, crazyNumber) => {
+  if (crazyNumber < 501) {
+    accumulator += 1
+  }
 
-console.log(lessThan501)
+  return accumulator
+
+}, 0
+
+)
+
+console.log(crazyNumbersLessThan501)
+
 
 /*
   03
@@ -32,9 +44,10 @@ console.log(lessThan501)
 
 const numbers = [5, 7, 3]
 
-const numberDouble = numbers.map(number => number*number)
+const doubleNumbers = numbers.map(number => number ** 2)
 
-console.log(numberDouble)
+console.log(doubleNumbers)
+
 
 /*
   04
@@ -57,6 +70,10 @@ const tarantinoMovies = [
   { name: 'Kill Bill: Volume 1', release: 2003 }
 ]
 
+const onlyBefore2000 = tarantinoMovies.filter(movie => movie.release < 2000)
+
+console.log(onlyBefore2000)
+
 /*
   05
 
@@ -72,7 +89,13 @@ const tvShows = [
   { name: 'The Handmaid\'s Tale', releaseYear: 2017 },
   { name: 'House M.D.', releaseYear: 2004 },
   { name: 'Watchmen', releaseYear: 2019 }
+
 ]
+
+const nameTvShows = tvShows.map(tvShow => tvShow.name )
+
+console.log(nameTvShows)
+
 
 /*
   06
@@ -92,6 +115,15 @@ const cart = [
   { name: 'Resident Evil 2', price: 119.90 },
   { name: 'Death Stranding', price: 149.99 }
 ]
+
+const gameName = cart.reduce(
+  (accumulator, product)=>{
+    return `${accumulator} ${product.name} \n`
+  }, ''
+)
+console.log(gameName)
+
+
 
 /*
   - Nome 1
