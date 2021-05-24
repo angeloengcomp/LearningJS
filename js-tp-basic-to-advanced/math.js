@@ -18,3 +18,4 @@ console.log(Math.random())//gera um numero aleatorio entre 0 e 1 = randon
 let numeroAleatorio = parseInt(Math.random() * (10 - 21)+21) // gera um numero aleatorio entre 10 e 5 e depois transforma em inteiro
 
 console.log(numeroAleatorio)
+

@@ -1,8 +1,14 @@
-//prompt recebe um valor
-const numero = prompt('Digite um numero');
+// const numeroRecebido = prompt('Insira um número')
 
-//seleciono o valor do id dentro do documento
-numeroEscolhido = document.getElementById('numero-escolhido');
 
-//troco o valor do id do documento pelo valor recebido no prompt
-numeroEscolhido.innerHTML = numero;
+// const numeroEscolhido = document.getElementById('numero-escolhido')
+
+
+// numeroEscolhido.innerHTML = numeroRecebido
+
+// or
+
+let numeroRecebido = prompt('insira um numero: ')
+
+
+document.getElementById('numero-escolhido').innerHTML = numeroRecebido
