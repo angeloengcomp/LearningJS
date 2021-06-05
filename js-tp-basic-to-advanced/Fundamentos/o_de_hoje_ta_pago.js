@@ -1,1 +1,0 @@
-console.log('o de hoje ta pago');
