@@ -15,7 +15,7 @@
         }
 
         body {
-            color:cadetblue;
+            color: cadetblue;
             width: 100vw;
             height: 100vh;
             background-color: rgb(94, 92, 90);
@@ -31,7 +31,8 @@
             padding: 15px 20px;
             box-shadow: 1px 1px 2px 1px rgba(77, 77, 73, 0.589);
         }
-        p{
+
+        p {
             border-radius: 4px;
             color: red;
             margin: 10px 0;
@@ -44,17 +45,34 @@
 <body>
     <section class="container">
         <h1> Bem vindo </h1>
-        
+
         <div id="paragrafos">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing edfdflit. </p>
             <p> Animi illo odit dignissimos autem fuga neque quia consectetur </p>
             <p> ullam at quidem, aliquam natus! </p>
             <p> illum aperiam harum qui in cum distinctio consequatur </p>
-            
+
         </div>
-        
-        <script src="./12_exercicio_for.js">
+
+        <!-- <script src="./12_exercicio_for.js">
             
+        </script> -->
+
+
+        <script>
+            const paragrafos = document.querySelector('#paragrafos');
+            const ps = paragrafos.querySelectorAll('p');
+
+            const styleBody = getComputedStyle(document.querySelector('body'));
+            const backgroundColorBody = styleBody.backgroundColor;
+            const colorFont = '#ffffff';
+
+            for (let p of ps) {
+                p.style.backgroundColor = backgroundColorBody;
+                p.style.color = colorFont;
+            }
+
+
         </script>
     </section>
 
@@ -86,4 +104,4 @@
 
 </body>
 
-</html>   
+</html>
