@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        body{
+            
+            background-color: darkgray;
+        }
+        .relogio{
+            font-size: 3em;
+        }
+        .cronometro{
+            background-color: azure;
+            border-radius: 10px;
+            border: 2px solid grey;
+            padding: 20px 90px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <div class="cronometro">
+        <h1>Timer</h1>
+        <p class="relogio">00:00:00</p>
+        <p>
+            <button class="iniciar">Iniciar</button>
+            <button class="pausar">Pausar</button>
+            <button class="zerar">Zerar</button>
+        </p>
+    </div>
+
+
+    <script src="./20_cronometro.js"></script>
+</body>
+</html>
