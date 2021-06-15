@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <style>
+        body{
+            background-color: azure;
+            display: flex;
+            justify-content: center;            
+        }
+        .container{
+            width: 450px;
+            border: 1px solid rgb(4, 0, 25);
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+
+        }
+
+        .calculadora{
+            display: flex;
+            justify-items: space-between;
+            width: 400px;
+        }
+
+        .display{
+            width: 100%;
+            font-size: 2em;
+            border: 1px solid;
+            text-align: right;
+            letter-spacing: 2px;
+            
+        }
+        .btn{
+            width: 100%;
+            font-size: 1.5em;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:active{
+            background-color: blanchedalmond;
+        }
+
+        .btn-eq{
+            background-color: darkslategrey;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="calculadora">
+            <table>
+                <tr>
+                    <td colspan="4" >  <input id="input-disabled "class="display" readonly></td>
+                </tr>
+                <tr>
+                    <td><button class="btn btn-clear">C</button></td>
+                    <td><button class="btn btn-num">(</button></td>
+                    <td><button class="btn btn-num">)</button></td>
+                    <td><button class="btn btn-num">/</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn btn-num">7</button></td>
+                    <td><button class="btn btn-num">8</button></td>
+                    <td><button class="btn btn-num">9</button></td>
+                    <td><button class="btn btn-num">*</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn btn-num">4</button></td>
+                    <td><button class="btn btn-num">5</button></td>
+                    <td><button class="btn btn-num">6</button></td>
+                    <td><button class="btn btn-num">+</button><td>
+                </tr>
+                <tr>
+                    <td><button class="btn btn-num">1</button></td>
+                    <td><button class="btn btn-num">2</button></td>
+                    <td><button class="btn btn-num">3</button></td>
+                    <td><button class="btn btn-num">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn btn-num">.</button></td>
+                    <td><button class="btn btn-num">0</button></td>
+                    <td><button class="btn btn-del">&laquo;</button></td>
+                    <td><button class="btn btn-eq">=</button></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+<!-- <script src="./7_factory_function_calc.js"> -->
+    <script src="./8_factory_function_calc.js"></script>
+
+</script>
+    
+</body>
+</html>
