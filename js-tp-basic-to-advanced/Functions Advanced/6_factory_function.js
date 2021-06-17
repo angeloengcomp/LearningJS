@@ -13,7 +13,7 @@ function criapessoa(nome, sobrenome, peso, altura) {
 
 
 
-        //Getter
+        //Getter protege o objeto de modificações
         get imc() {
             const indice = this.peso / (this.altura ** 2);
             return indice.toFixed(2);
