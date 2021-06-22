@@ -24,3 +24,17 @@ console.log(conta1);
 
 conta1.depositar(11);
 conta1.sacar(11);
+
+function CC(agencia, conta, saldo, limite){
+    Conta.call(this, agencia, conta, saldo);
+
+}
+
+// polimorfismo habilidade de rescrever o metodo-------------------
+
+CC.prototype = Object.create(Conta.prototype);
+CC.prototype.constructor = CC;
+
+CC.prototype.sacar = function(valor){
+    //sobrescrever a
+}
